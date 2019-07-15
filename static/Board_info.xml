@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<node>
+	<pin name="SW1" type="digital" dir="Input" number="18" />
+	<pin name="LED1" type="digital" dir="Output" number="25" />
+	<pin name="LED2" type="digital" dir="Output" number="24" />
+	<pin name="LED3" type="digital" dir="Output" number="23" />
+    <triger name="Triger_SW1" pin="SW1" value="HIGH" />
+    <action triger="Triger_SW1" type="get" url="http://XXX.XXX.XXX.XXX:8080/example/binarycounter" />
+</node>
